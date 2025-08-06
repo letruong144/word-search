@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#game-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#grid-container {
+    display: grid;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.grid-cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #eee;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.grid-cell.selected {
+    background-color: #aed6f1;
+}
+
+.grid-cell.found {
+    background-color: #58d68d;
+    color: white;
+}
+
+#word-list-container {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+#word-list h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+#word-list li {
+    font-size: 1.1em;
+    padding: 5px 0;
+    transition: text-decoration 0.3s;
+}
+
+#word-list li.found {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: bold;
+}
